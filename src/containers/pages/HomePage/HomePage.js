@@ -32,6 +32,9 @@ class HomePage extends Component {
           <li>
             <Link to="/github">Github Users</Link>
           </li>
+          <li>
+            <Link to="/useritemlist">User Item List</Link>
+          </li>
         </ul>
       </>
     );
