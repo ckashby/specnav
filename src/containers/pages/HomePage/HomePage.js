@@ -1,14 +1,20 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Text, ToggleButton } from "@adobe/react-spectrum";
-import Airplane from "@spectrum-icons/workflow/Airplane";
-import { ActionButton } from "@adobe/react-spectrum";
+import Navbar from "../../../components/layout/Navbar";
+import {
+  ActionButton,
+  Button,
+  Flex,
+  Text,
+  ToggleButton,
+} from "@adobe/react-spectrum";
+import Beaker from "@spectrum-icons/workflow/Beaker";
 
 class HomePage extends Component {
   render() {
     return (
       <>
-        <h2>Hello</h2>
+        <Navbar title="Github Finder" />
         {/* {loading ? <h3>Loading...</h3> : <h3>Hello {showName && name}</h3>} */}
         <ul>
           <li>
@@ -22,6 +28,9 @@ class HomePage extends Component {
           </li>
           <li>
             <Link to="/users">Users</Link>
+          </li>
+          <li>
+            <Link to="/github">Github Users</Link>
           </li>
         </ul>
       </>

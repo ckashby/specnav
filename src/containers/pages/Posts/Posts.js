@@ -10,6 +10,7 @@ function Posts() {
   useEffect(() => {
     axios.get("https://jsonplaceholder.typicode.com/posts").then((response) => {
       setPosts(response.data);
+      console.log(response.data);
     });
   }, []);
 
@@ -18,9 +19,11 @@ function Posts() {
       <h2>Posts</h2>
       <Link to="/">Home</Link>
       <hr />
-      {posts.map((post) => {
-        return <Post />;
-      })}
+      <ul>
+        {posts.map((post) => {
+          return <li>{post.title}</li>;
+        })}
+      </ul>
     </>
   );
 }
