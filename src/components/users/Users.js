@@ -29,7 +29,15 @@ class Users extends Component {
     return (
       <div>
         {this.state.users.map((user) => (
-          <div>{user.login}</div>
+          <div className="card text-center">
+            <img
+              src={user.avatar_url}
+              alt="user avatar"
+              className="img round-img"
+              style={{ width: "160px" }}
+            />
+            <h3>{user.login}</h3>
+          </div>
         ))}
       </div>
     );

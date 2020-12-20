@@ -16,9 +16,8 @@ export class Navbar extends Component {
   render() {
     return (
       <nav className="navbar bg-primary">
-        <h1>
-          {this.props.title} | {this.props.desc}
-        </h1>
+        <button>{this.props.title}</button>
+        <button>{this.props.desc}</button>
       </nav>
     );
   }
