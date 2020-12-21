@@ -7,7 +7,7 @@ import ContactPage from "./containers/pages/ContactPage/ContactPage";
 import Posts from "./containers/pages/Posts/Posts";
 import TestUsers from "./containers/pages/Users/Users";
 import Github from "./containers/pages/Github/Github";
-import Users from "./components/users/Users";
+import UserPage from "./components/users/UserPage";
 
 function App() {
   return (
@@ -17,9 +17,9 @@ function App() {
         <Route path="/about" component={AboutPage} />
         <Route path="/contact" component={ContactPage} />
         <Route path="/posts" component={Posts} />
-        <Route path="/users" component={TestUsers} />
+        <Route path="/testUsers" component={TestUsers} />
         <Route path="/github" component={Github} />
-        <Route path="/useritemlist" component={Users} />
+        <Route path="/users" component={UserPage} />
       </Router>
     </>
   );

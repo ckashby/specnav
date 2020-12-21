@@ -8,7 +8,6 @@ import {
   Text,
   ToggleButton,
 } from "@adobe/react-spectrum";
-import Beaker from "@spectrum-icons/workflow/Beaker";
 
 class HomePage extends Component {
   render() {
@@ -27,13 +26,13 @@ class HomePage extends Component {
             <Link to="/posts">Posts</Link>
           </li>
           <li>
-            <Link to="/users">Users</Link>
+            <Link to="/testUsers">Test Users</Link>
           </li>
           <li>
             <Link to="/github">Github Users</Link>
           </li>
           <li>
-            <Link to="/useritemlist">User Item List</Link>
+            <Link to="/users">Users</Link>
           </li>
         </ul>
       </>

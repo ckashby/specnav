@@ -43,16 +43,21 @@ class Users extends Component {
     );
   }
 
-  //   render() {
-  //     return (
-  //       <div>
-  //         {this.state.users.map((user) => (
-  //           <div key={user.id}>{user.login}</div>
-  //         ))}
-  //       </div>
-  //     );
-  //   }
-  // }
+  // return (
+  //     <div>
+  //       {this.state.users.map((user) => (
+  //         <div className="card text-center">
+  //           <img
+  //             src={user.avatar_url}
+  //             alt="user avatar"
+  //             className="img round-img"
+  //             style={{ width: "160px" }}
+  //           />
+  //           <h3>{user.login}</h3>
+  //         </div>
+  //       ))}
+  //     </div>
+  //   );
 }
 
 export default Users;
