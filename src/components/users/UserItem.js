@@ -10,7 +10,7 @@ class UserItem extends Component {
           src={avatar_url}
           alt="user avatar"
           className="img round-img"
-          style={{ width: "160px" }}
+          style={{ width: "60px" }}
         />
         <h3>{login}</h3>
         <a href={html_url} className="btn btn-dark btn-sm my-1">
