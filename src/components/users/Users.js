@@ -6,9 +6,9 @@ class Users extends Component {
     users: [
       {
         id: "1",
-        login: "mojombo",
+        login: "ckashby",
         avatar_url: "https://avatars0.githubusercontent.com/u/1?v=4",
-        html_url: "https://github.com/mojombo",
+        html_url: "https://github.com/ckashby",
       },
       {
         id: "2",
@@ -29,19 +29,7 @@ class Users extends Component {
     return (
       <div>
         {this.state.users.map((user) => (
-          <div key={user.id} className="card text-center">
-            {/* <UserItem user={user} /> */}
-            <img
-              src={user.avatar_url}
-              alt="avatar"
-              className="img round-img"
-              style={{ width: "160px" }}
-            />
-            <h3>{user.login}</h3>
-            <a href={user.html_url} className="btn btn-dark btn-sm my-1">
-              More
-            </a>
-          </div>
+          <UserItem key={user.id} user={user} />
         ))}
       </div>
     );
