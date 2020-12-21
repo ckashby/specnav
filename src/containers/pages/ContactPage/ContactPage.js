@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Flex } from "@adobe/react-spectrum";
+import { Flex, View } from "@adobe/react-spectrum";
 import { Beaker } from "@spectrum-icons/workflow/Beaker";
 
 function ContactPage() {
@@ -8,8 +8,14 @@ function ContactPage() {
     <>
       <h2>Contact Us</h2>
       <Link to="/">Home</Link>
+
       <hr />
-      <Flex gap="size-100">Flex Stuff</Flex>
+      <Flex direction="row" height="size-800" gap="size-100">
+        More Flex stuff... ???
+        <View backgroundColor="celery-600" width="size-800" />
+        <View backgroundColor="blue-600" width="size-800" />
+        <View backgroundColor="magenta-600" width="size-800" />
+      </Flex>
     </>
   );
 }
