@@ -7,7 +7,7 @@ export class UserPage extends Component {
     return (
       <div>
         <Navbar />
-        <h2>User Page</h2>
+        <h2>User List</h2>
         <Users />
       </div>
     );
